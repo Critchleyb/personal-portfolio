@@ -1,0 +1,4 @@
+.hover-highlight:hover {
+  background-color: #273c75;
+  transition: all 0.2s;
+}
