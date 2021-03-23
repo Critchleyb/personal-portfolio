@@ -2,18 +2,11 @@ import React from "react";
 import "./summary.css";
 import GithubIcon from "../../assets/icons/github-brands.svg";
 import LinkedInIcon from "../../assets/icons/linkedin-brands.svg";
+import Layout from "../utils/Layout";
 
 export default function Summary() {
   return (
-    <div
-      className="myHeader"
-      style={{
-        display: "flex",
-        backgroundImage: `linear-gradient(to left, #273c75, #192a56)`,
-        width: "100%",
-      }}
-    >
-      <div className="navbar-margin" />
+    <Layout>
       <div className="header-container-about">
         <div className="about_me-container">
           <p>
@@ -25,6 +18,7 @@ export default function Summary() {
           </p>
         </div>
       </div>
+
       <div className="header-container-title">
         <h1>Ben Critchley</h1>
         <div style={{ position: "relative" }}>
@@ -51,6 +45,6 @@ export default function Summary() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

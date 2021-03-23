@@ -1,15 +1,19 @@
 import "./App.css";
 import Navbar from "./features/navbar/Navbar";
-import { Route } from "react-router";
+import { Route, Switch } from "react-router";
 import Summary from "./features/header/Summary";
-import Test from "./features/test";
+import SkillsPage from "./features/skills/SkillsPage";
+import PageNotFound from "./features/errors/PageNotFound";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Route exact path="/" component={Summary} />
-      <Route path="/test" component={Test} />
+      <Switch>
+        <Route exact path="/" component={Summary} />
+        <Route path="/skills" component={SkillsPage} />
+        <Route component={PageNotFound} />
+      </Switch>
     </>
   );
 }
