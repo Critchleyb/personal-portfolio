@@ -5,11 +5,11 @@ import {
   faDesktop,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import "./skillsCard.css";
+import "./skillsCard.scss";
 
 export default function SkillsCard() {
   return (
-    <div className="skills-card-container">
+    <div className="skills-card">
       <div className="skills-card-section">
         <FontAwesomeIcon icon={faDesktop} className="skills-card-icon" />
         <h3>Front-End</h3>
@@ -19,11 +19,11 @@ export default function SkillsCard() {
         </p>
         <h4 className="skills-card-h4">Launguages I Write</h4>
         <ul className="skills-card-list">
-          <li className="skills-card-list-item">HTML5</li>
-          <li className="skills-card-list-item">CSS / SCSS</li>
-          <li className="skills-card-list-item">JavaScript ES6</li>
-          <li className="skills-card-list-item">React</li>
-          <li className="skills-card-list-item">Angular</li>
+          <li>HTML5</li>
+          <li>CSS / SCSS</li>
+          <li>JavaScript ES6</li>
+          <li>React</li>
+          <li>Angular</li>
         </ul>
       </div>
       <div className="skills-card-section skills-card-section-middle">
@@ -35,10 +35,10 @@ export default function SkillsCard() {
         </p>
         <h4 className="skills-card-h4">What I know</h4>
         <ul className="skills-card-list">
-          <li className="skills-card-list-item">C#</li>
-          <li className="skills-card-list-item">DotNet</li>
-          <li className="skills-card-list-item">JavaScript</li>
-          <li className="skills-card-list-item">NodeJS</li>
+          <li>C#</li>
+          <li>.Net Core</li>
+          <li>JavaScript</li>
+          <li>NodeJS</li>
         </ul>
       </div>
       <div className="skills-card-section">
@@ -50,10 +50,10 @@ export default function SkillsCard() {
         </p>
         <h4 className="skills-card-h4">Tech I Use</h4>
         <ul className="skills-card-list">
-          <li className="skills-card-list-item">MongoDB</li>
-          <li className="skills-card-list-item">Mongoose</li>
-          <li className="skills-card-list-item">SQL</li>
-          <li className="skills-card-list-item">Entity Framework</li>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
+          <li>SQL</li>
+          <li>Entity Framework</li>
         </ul>
       </div>
     </div>

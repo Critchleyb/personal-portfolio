@@ -9,11 +9,13 @@ export default function SkillsPage() {
         style={{
           display: "flex",
           justifyContent: "space-evenly",
+          flexDirection: "column",
           alignItems: "center",
           width: "100%",
           height: "100%",
         }}
       >
+        <h2 style={{ marginBottom: "0" }}>My Skills</h2>
         <SkillsCard />
       </div>
     </Layout>

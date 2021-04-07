@@ -1,0 +1,29 @@
+.projectsPage {
+  &-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-tab {
+    position: absolute;
+    top: -2rem;
+    width: 9.5%;
+    height: 2rem;
+    background-color: gray;
+    transform: translateX(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+}

@@ -1,10 +1,11 @@
 import React from "react";
-import "./navbar.css";
+import "./navbar.scss";
 import {
   faCode,
   faHome,
   faFileCode,
   faAddressCard,
+  faMale,
 } from "@fortawesome/free-solid-svg-icons";
 import NavbarItem from "./NavbarItem";
 
@@ -15,6 +16,13 @@ export default function Navbar() {
         <ul>
           <li>
             <NavbarItem faIcon={faHome} name={"Summary"} linkPath={"/"} />
+          </li>
+          <li>
+            <NavbarItem
+              faIcon={faMale}
+              name={"About Me"}
+              linkPath={"/aboutme"}
+            />
           </li>
           <li>
             <NavbarItem faIcon={faCode} name={"Skills"} linkPath={"/skills"} />

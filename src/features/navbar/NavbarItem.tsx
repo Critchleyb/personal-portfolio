@@ -1,6 +1,6 @@
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./navbaritem.css";
+import "./navbaritem.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
 

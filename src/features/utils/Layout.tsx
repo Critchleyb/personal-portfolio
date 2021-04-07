@@ -4,15 +4,18 @@ interface Props {
   children?: React.ReactNode;
   leftColor?: string;
   rightColor?: string;
+  className?: string;
 }
 
 export default function Background({
   children,
   leftColor = "#273c75",
   rightColor = "#192a56",
+  className = "",
 }: Props) {
   return (
     <div
+      className={className}
       style={{
         display: "flex",
         backgroundImage: `linear-gradient(to left, ${rightColor}, ${leftColor})`,
