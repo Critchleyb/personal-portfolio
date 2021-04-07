@@ -64,4 +64,18 @@ export const projects: Project[] = [
     description: "Test Project 4",
     tools: ["HTML"],
   },
+  {
+    title: "Course Project 5",
+    link: "testlink.com/4",
+    category: "Course",
+    description: "Test Project 4",
+    tools: ["HTML"],
+  },
+  {
+    title: "Course Project 6",
+    link: "testlink.com/4",
+    category: "Course",
+    description: "Test Project 4",
+    tools: ["HTML"],
+  },
 ];

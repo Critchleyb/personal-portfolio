@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Layout from "../utils/Layout";
 import "./projectsPage.scss";
 import { Project, projects } from "./projects";
+import ProjectCard from "./ProjectCard";
+import { Divider } from "semantic-ui-react";
 
 export default function ProjectsPage() {
   const [selectedTab, setSelectedTab] = useState("Personal");
@@ -12,9 +14,11 @@ export default function ProjectsPage() {
         <h2 className="projectsPage">My Projects</h2>
         <div
           style={{
+            display: "flex",
+            flexDirection: "column",
             position: "relative",
             width: "80%",
-            height: "70%",
+            height: "80%",
             backgroundColor: "white",
             marginTop: "auto",
             borderTopLeftRadius: "10px",
@@ -42,14 +46,18 @@ export default function ProjectsPage() {
           >
             Course
           </div>
-          <div>
-            <ul>
-              {projects.map((project) => {
-                if (project.category === selectedTab) {
-                  return <li style={{ color: "black" }}>{project.title}</li>;
-                }
-              })}
-            </ul>
+          <p>
+            {selectedTab === "Personal"
+              ? "These are my personal projects, source code is available on github."
+              : "These are my course projects, source code is available on github."}
+          </p>
+          <Divider />
+          <div className="projectsPage-projects">
+            {projects.map((project) => {
+              if (project.category === selectedTab) {
+                return <ProjectCard project={project} />;
+              }
+            })}
           </div>
         </div>
       </div>

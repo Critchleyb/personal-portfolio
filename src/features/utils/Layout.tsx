@@ -9,6 +9,8 @@ interface Props {
 
 export default function Background({
   children,
+  // leftColor = "#8e44ad",
+  // rightColor = "#9b59b6",
   leftColor = "#273c75",
   rightColor = "#192a56",
   className = "",
