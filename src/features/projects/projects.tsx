@@ -1,6 +1,7 @@
 export interface Project {
   title: string;
   image?: string;
+  shortBio?: string;
   link?: string;
   category: string;
   description: string;
@@ -11,6 +12,8 @@ export const projects: Project[] = [
   {
     title: "Peronsal Project 1",
     link: "testlink.com/1",
+    shortBio:
+      "A project to do this that and another for some reason to show shomething off",
     category: "Personal",
     description: "Test Project 1",
     tools: ["HTML", "CSS", "SASS", "JavaScript", "NodeJS", "React", "MongoDB"],

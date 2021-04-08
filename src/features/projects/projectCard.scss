@@ -24,4 +24,22 @@
     margin-bottom: 0;
     border-bottom: 1px solid black;
   }
+
+  &-image {
+    border-bottom: 1px solid black;
+  }
+
+  &-list {
+    margin-top: auto;
+    align-self: flex-start;
+    margin-left: 2rem !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
 }
