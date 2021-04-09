@@ -22,7 +22,7 @@ export default function Background({
         display: "flex",
         backgroundImage: `linear-gradient(to left, ${rightColor}, ${leftColor})`,
         width: "100%",
-        height: "100vh",
+        minHeight: "100vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",

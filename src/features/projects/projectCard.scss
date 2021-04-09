@@ -1,20 +1,25 @@
+$borderColor: rgb(125, 125, 125);
+
 .project-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   margin-top: auto;
-  height: 80%;
-  width: 20%;
+  min-height: 28rem;
+  flex: 1 0 21%;
+  max-width: 21%;
   border-radius: 10px;
   margin: 1rem;
-  border: 1px solid black;
+  border: 1px solid $borderColor;
   transition: all 0.3s;
+  cursor: pointer;
+  overflow: hidden;
 
   &:hover {
     transform: translateY(-5px);
     transition: all 0.3s;
-    box-shadow: 2px 5px 10px black;
+    box-shadow: 2px 5px 10px $borderColor;
   }
 
   h3 {
@@ -22,11 +27,16 @@
     width: 100%;
     text-align: center;
     margin-bottom: 0;
-    border-bottom: 1px solid black;
+  }
+
+  &-image-container {
+    border-bottom: 1px solid $borderColor;
+    border-top: 1px solid $borderColor;
+    padding: 0.3rem;
   }
 
   &-image {
-    border-bottom: 1px solid black;
+    border-radius: 10px;
   }
 
   &-list {
@@ -35,6 +45,9 @@
     margin-left: 2rem !important;
     margin-top: auto !important;
     margin-bottom: auto !important;
+  }
+
+  &-seeMore {
   }
 
   p {

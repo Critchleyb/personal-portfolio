@@ -12,7 +12,7 @@ export default function Summary() {
           <p>
             Hi, I'm Ben. <br />
             <br />
-            I'm a junior full stack developer from Basingstoke, England. <br />
+            I'm a full stack developer from Basingstoke, England. <br />
             <br />I enjoy creating functional web apps in React and Angular
             using .Net Core, NodeJS, MongoDB and SQL.
           </p>

@@ -12,10 +12,10 @@ export default function SkillsPage() {
           flexDirection: "column",
           alignItems: "center",
           width: "100%",
-          height: "100%",
+          minHeight: "100vh",
         }}
       >
-        <h2 style={{ marginBottom: "0" }}>My Skills</h2>
+        <h2 style={{ marginBottom: "0", marginTop: "2rem" }}>My Skills</h2>
         <SkillsCard />
       </div>
     </Layout>

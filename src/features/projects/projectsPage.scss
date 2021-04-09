@@ -2,25 +2,9 @@
   &-container {
     display: flex;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
-  }
-
-  &-tab {
-    position: absolute;
-    top: -2rem;
-    width: 9.5%;
-    height: 2rem;
-    background-color: gray;
-    transform: translateX(-50%);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    cursor: pointer;
   }
 
   h2 {
@@ -29,16 +13,44 @@
 
   &-projects {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 2rem;
-  }
+    position: relative;
+    width: 80%;
+    background-color: rgb(240, 240, 240);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 5px 5px #111;
 
-  p {
-    font-size: 1.1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    &-tab {
+      position: absolute;
+      top: -2rem;
+      width: 9.5%;
+      height: 2rem;
+      background-color: gray;
+      transform: translateX(-50%);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      cursor: pointer;
+    }
+
+    &-cards {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
   }
 }

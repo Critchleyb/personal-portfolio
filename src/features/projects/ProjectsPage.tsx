@@ -3,44 +3,52 @@ import Layout from "../utils/Layout";
 import "./projectsPage.scss";
 import { Project, projects } from "./projects";
 import ProjectCard from "./ProjectCard";
-import { Divider } from "semantic-ui-react";
+import { Divider, Header, Modal, Image, Button } from "semantic-ui-react";
+import ProjectModal from "./ProjectModal";
 
 export default function ProjectsPage() {
   const [selectedTab, setSelectedTab] = useState("Personal");
+  const [open, setOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  function handleOpenModal(project: Project) {
+    setSelectedProject(project);
+    setOpen(true);
+  }
+
+  function handleCloseModal() {
+    setSelectedProject(null);
+  }
 
   return (
     <Layout className="projectsPage">
+      {open && (
+        <ProjectModal
+          project={selectedProject}
+          clearProject={handleCloseModal}
+        />
+      )}
+
       <div className="projectsPage-container">
         <h2 className="projectsPage">My Projects</h2>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            position: "relative",
-            width: "80%",
-            height: "80%",
-            backgroundColor: "white",
-            marginTop: "auto",
-            borderTopLeftRadius: "10px",
-            borderTopRightRadius: "10px",
-            boxShadow: "5px 5px 5px #111",
-          }}
-        >
+        <div className="projectsPage-projects">
           <div
-            className="projectsPage-tab"
+            className="projectsPage-projects-tab"
             style={{
               left: "45%",
-              backgroundColor: selectedTab === "Personal" ? "white" : "gray",
+              backgroundColor:
+                selectedTab === "Personal" ? "rgb(240, 240, 240)" : "gray",
             }}
             onClick={() => setSelectedTab("Personal")}
           >
             Personal
           </div>
           <div
-            className="projectsPage-tab"
+            className="projectsPage-projects-tab"
             style={{
               left: "55%",
-              backgroundColor: selectedTab === "Course" ? "white" : "gray",
+              backgroundColor:
+                selectedTab === "Course" ? "rgb(240, 240, 240)" : "gray",
             }}
             onClick={() => setSelectedTab("Course")}
           >
@@ -52,10 +60,16 @@ export default function ProjectsPage() {
               : "These are my course projects, source code is available on github."}
           </p>
           <Divider />
-          <div className="projectsPage-projects">
-            {projects.map((project) => {
+          <div className="projectsPage-projects-cards">
+            {projects.map((project, i) => {
               if (project.category === selectedTab) {
-                return <ProjectCard project={project} />;
+                return (
+                  <ProjectCard
+                    key={i}
+                    project={project}
+                    openModal={handleOpenModal}
+                  />
+                );
               }
             })}
           </div>
