@@ -5,6 +5,7 @@ import Summary from "./features/header/Summary";
 import SkillsPage from "./features/skills/SkillsPage";
 import PageNotFound from "./features/errors/PageNotFound";
 import ProjectsPage from "./features/projects/ProjectsPage";
+import AboutMe from "./features/about/AboutMe";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Summary} />
+        <Route path="/aboutMe" component={AboutMe} />
         <Route path="/skills" component={SkillsPage} />
         <Route path="/projects" component={ProjectsPage} />
         <Route component={PageNotFound} />

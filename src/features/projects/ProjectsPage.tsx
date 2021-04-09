@@ -3,7 +3,7 @@ import Layout from "../utils/Layout";
 import "./projectsPage.scss";
 import { Project, projects } from "./projects";
 import ProjectCard from "./ProjectCard";
-import { Divider, Header, Modal, Image, Button } from "semantic-ui-react";
+import { Divider } from "semantic-ui-react";
 import ProjectModal from "./ProjectModal";
 
 export default function ProjectsPage() {
@@ -56,8 +56,8 @@ export default function ProjectsPage() {
           </div>
           <p>
             {selectedTab === "Personal"
-              ? "These are my personal projects, source code is available on github."
-              : "These are my course projects, source code is available on github."}
+              ? `These are my personal projects, I enjoy creating functional web applications from start to finish.`
+              : "These are my guided course projects that I have built whilst learning to code."}
           </p>
           <Divider />
           <div className="projectsPage-projects-cards">
@@ -71,6 +71,7 @@ export default function ProjectsPage() {
                   />
                 );
               }
+              return null;
             })}
           </div>
         </div>

@@ -37,11 +37,12 @@ export default function ProjectModal({ project, clearProject }: Props) {
       >
         {project?.title}
       </Modal.Header>
-      <Modal.Content>
+      <Modal.Content scrolling>
         <Image
           size="large"
           src={project?.image || placeholderImage}
           style={{ marginBottom: "2rem" }}
+          alt="project image"
           wrapped
           centered
         />
@@ -71,11 +72,15 @@ export default function ProjectModal({ project, clearProject }: Props) {
       </Modal.Content>
       <Modal.Actions>
         <Button
+          as="a"
+          href={project?.hostedLink}
+          target="_blank"
           color="green"
           onClick={() => closeModal()}
           icon="eye"
           labelPosition="right"
           content="View"
+          style={{ float: "left" }}
         />
 
         <Button
@@ -87,6 +92,15 @@ export default function ProjectModal({ project, clearProject }: Props) {
           icon="github"
           onClick={() => closeModal()}
           color="black"
+          style={{ float: "left" }}
+        />
+
+        <Button
+          content="Close"
+          labelPosition="right"
+          icon="close"
+          onClick={() => closeModal()}
+          color="red"
         />
       </Modal.Actions>
     </Modal>

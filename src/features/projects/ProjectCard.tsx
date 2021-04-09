@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Image, List, Button } from "semantic-ui-react";
+import { Image, List, Button } from "semantic-ui-react";
 import "./projectCard.scss";
 import { Project } from "./projects";
 import placeholderImage from "../../assets/images/placeholder.jpg";
@@ -17,6 +17,7 @@ export default function ProjectCard({ project, openModal }: Props) {
         <Image
           className="project-card-image"
           src={project.image || placeholderImage}
+          alt="project image"
         />
       </div>
       <p>{project.shortBio}</p>
@@ -25,6 +26,7 @@ export default function ProjectCard({ project, openModal }: Props) {
         className="project-card-list"
         items={project.tools.map((el, i) => {
           if (i < 4) return el;
+          return null;
         })}
       />
       <Button
