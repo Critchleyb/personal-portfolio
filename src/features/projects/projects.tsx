@@ -27,7 +27,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/Critchleyb/personal-portfolio",
     image: portfolioImage,
     shortBio:
-      "My Personal Portfolio, built using react with a mix of custom CSS and Semantic Ui React.",
+      "My Personal Portfolio, built using react with a mix of custom CSS and Semantic UI React.",
     longBio: [
       "This website is a standalone front end built using react.",
       "For this site, i wanted to go with a simple web application type design, with most of the pages fitting into a single screens height for no scrolling, and a fixed sidebar navigation to move between the pages. The website is fully reactive and able to be viewed on all device types.",
@@ -49,14 +49,15 @@ export const projects: Project[] = [
   {
     title: "Discord Schedule Bot",
     image: infoPupImage,
+    githubLink: "https://github.com/Critchleyb/InfoPup-Schedule-Bot",
     shortBio:
       "A discord bot built in Node.JS that interacts with discord, twitch and twitter API's.",
     longBio: [
-      "This project is a Node.JS Backend, with a cloud hosted MongoDB Atlas database. There is no front end for this application, all commands are given to the server directly in the Discord chat application.",
+      "This project is a Node.JS back-end, with a cloud hosted MongoDB Atlas database. There is no front end for this application, all commands are given to the server directly in the Discord chat application.",
       "A friend came to me with a problem, most bots on twitch use Twitch API's live webhook. This means that notifications can be sent out to users sometimes up to 5 minutes later than the actual go live time on twitch.tv. He also wanted to give his viewers an incentive to show up early to his streams.",
       "To solve this problem, i developed Info Pup. A custom bot that you can set up a schedule with and have it post notifications in Discord and Twitter. As well as this, it logs into the users channel 5 minutes before the go live time and rewards anyone that chats with a custom role on Discord.",
       "Creating this application taught me a lot about Node.JS and working with API's. In order to access users connections on Discord, they had to go through the OAuthentication flow to allow my app to access their info.",
-      "The source code for this project is currently undergoing a refactor in order to make it safe to share publicly on Github.",
+      "The source code for this project is currently undergoing a refactor in order to make it safe to share publicly on GitHub.",
     ],
     category: "Personal",
     tools: [
@@ -66,7 +67,7 @@ export const projects: Project[] = [
       "MongoDB",
       "Atlas",
       "Mongoose",
-      "Javascript ES6",
+      "JavaScript ES6",
       "Cron jobs",
     ],
   },
@@ -83,7 +84,7 @@ export const projects: Project[] = [
       'This application was built for the Udemy course "Complete guide to building an app with .Net Core and React".',
       "Building this application gave me a great starting point on how to build a web application using React and .Net Core 5.0. It also introduced me to using Entity Framework and an SQL Database, in this case, GraphSQL",
       "The application is a social event planner. You can create an account, then join or host events and chat about them with other participants. You can also customise your profile with profile pictures and info, and follow other users.",
-      "The application has many features, including a chat feature on each event page that uses SingalR to update in real time, no need to refersh the page when a user posts a comment!",
+      "The application has many features, including a chat feature on each event page that uses SingalR to update in real time, no need to refresh the page when a user posts a comment!",
       "The Back-end uses JWT's for authentication, and is built using Uncle Bobs Clean Architecture design principles, CQRS and MediatR.",
     ],
     category: "Course",
@@ -111,7 +112,7 @@ export const projects: Project[] = [
     longBio: [
       'This web application was built using Angular for the Udemy Course "Angular - The Complete Guide (2020 Edition)"',
       "The application is a place to store recipes, and has a shopping list feature where you can select the recipe you want to make and it will add those ingredients to the list.",
-      "I used firebase as the back-end of this application, for hosting and database. This was my first exposure to linking a front end application to a back-end. It allowed me to begin to understand how larger applications would be structured and served as a great introduction to my first modern framework.",
+      "I used Firebase as the back-end of this application, for hosting and database. This was my first exposure to linking a front end application to a back-end. It allowed me to begin to understand how larger applications would be structured and served as a great introduction to my first modern framework.",
     ],
     category: "Course",
     tools: [
@@ -130,7 +131,7 @@ export const projects: Project[] = [
       "https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/",
     image: omnifoodImage,
     shortBio:
-      "A begginers guided course on how to use HTML and CSS to create a responsive webpage.",
+      "A beginners guided course on how to use HTML and CSS to create a responsive webpage.",
     longBio: [
       'This was the first course I took on web development. Udemys "Build Responsive Real World Websites with HTML5 and CSS3".',
       "This course was a great starting point for me, and introduced me to the concept of responsive design at the very first step. Since then it has been a part of every site I build.",
@@ -186,7 +187,7 @@ export const projects: Project[] = [
       "How to use CSS Grid and Flexbox combined to create highly responsive designs",
     longBio: [
       'This site was built as part of the Udemy course "Advanced CSS and Sass: Flexbox, Grid, Animations and More!"',
-      "The main purpose of building this website was an introduction to CSS Grid. It gave me a great understanding of how this can be used to create responsive designs, and allowed me to get a headstart on most CSS frameworks grid systems.",
+      "The main purpose of building this website was an introduction to CSS Grid. It gave me a great understanding of how this can be used to create responsive designs, and allowed me to get a head start on most CSS frameworks grid systems.",
     ],
     category: "Course",
     tools: [
@@ -203,7 +204,7 @@ export const projects: Project[] = [
     shortBio:
       "I have many more small projects I have created whilst learning that I'm unable to host",
     longBio: [
-      "All throughout 2020, I have been researching and completing courses. My github repos are full of lots of other small projects that have helped me gain a base level understanding of many different web technologies and languages.",
+      "All throughout 2020, I have been researching and completing courses. My GitHub repos are full of lots of other small projects that have helped me gain a base level understanding of many different web technologies and languages.",
     ],
     category: "Course",
     tools: [
