@@ -14,7 +14,6 @@ $borderColor: rgb(125, 125, 125);
   border: 1px solid $borderColor;
   transition: all 0.3s;
   cursor: pointer;
-  overflow: hidden;
 
   &:hover {
     transform: translateY(-5px);
@@ -30,13 +29,17 @@ $borderColor: rgb(125, 125, 125);
   }
 
   &-image-container {
+    display: flex;
     border-bottom: 1px solid $borderColor;
     border-top: 1px solid $borderColor;
     padding: 0.3rem;
+    width: 100%;
+    justify-content: center;
   }
 
   &-image {
     border-radius: 10px;
+    height: 10rem;
   }
 
   &-list {
@@ -45,9 +48,6 @@ $borderColor: rgb(125, 125, 125);
     margin-left: 2rem !important;
     margin-top: auto !important;
     margin-bottom: auto !important;
-  }
-
-  &-seeMore {
   }
 
   p {

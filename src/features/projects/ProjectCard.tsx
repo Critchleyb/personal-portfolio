@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, List, Button } from "semantic-ui-react";
+import { Image, List, Button, Label } from "semantic-ui-react";
 import "./projectCard.scss";
 import { Project } from "./projects";
 import placeholderImage from "../../assets/images/placeholder.jpg";
@@ -11,8 +11,13 @@ interface Props {
 
 export default function ProjectCard({ project, openModal }: Props) {
   return (
-    <div className="project-card" onClick={() => openModal(project)}>
+    <div
+      className="project-card"
+      onClick={() => openModal(project)}
+      style={{ position: "relative" }}
+    >
       <h3>{project.title}</h3>
+
       <div className="project-card-image-container">
         <Image
           className="project-card-image"
@@ -20,6 +25,12 @@ export default function ProjectCard({ project, openModal }: Props) {
           alt="project image"
         />
       </div>
+      <Label
+        color={project.category === "Personal" ? "green" : "red"}
+        style={{ marginTop: "0.5rem" }}
+      >
+        {project.category} Project
+      </Label>
       <p>{project.shortBio}</p>
       <List
         bulleted

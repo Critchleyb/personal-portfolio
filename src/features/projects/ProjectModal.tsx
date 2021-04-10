@@ -38,14 +38,21 @@ export default function ProjectModal({ project, clearProject }: Props) {
         {project?.title}
       </Modal.Header>
       <Modal.Content scrolling>
-        <Image
-          size="large"
-          src={project?.image || placeholderImage}
-          style={{ marginBottom: "2rem" }}
-          alt="project image"
-          wrapped
-          centered
-        />
+        <div
+          style={{
+            height: "20rem",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            src={project?.image || placeholderImage}
+            alt="project image"
+            centered
+          />
+        </div>
+
         <Divider />
         <Modal.Description>
           <Header style={{ fontFamily: "Quicksand, sans-serif" }}>
@@ -81,6 +88,7 @@ export default function ProjectModal({ project, clearProject }: Props) {
           labelPosition="right"
           content="View"
           style={{ float: "left" }}
+          disabled={!project?.hostedLink}
         />
 
         <Button
@@ -93,7 +101,23 @@ export default function ProjectModal({ project, clearProject }: Props) {
           onClick={() => closeModal()}
           color="black"
           style={{ float: "left" }}
+          disabled={!project?.githubLink}
         />
+
+        {project?.courseLink && (
+          <Button
+            as="a"
+            href={project?.courseLink}
+            target="_blank"
+            content="View Course"
+            labelPosition="right"
+            icon="book"
+            onClick={() => closeModal()}
+            color="orange"
+            style={{ float: "left" }}
+            disabled={!project?.githubLink}
+          />
+        )}
 
         <Button
           content="Close"

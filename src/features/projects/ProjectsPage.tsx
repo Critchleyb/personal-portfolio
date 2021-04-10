@@ -7,7 +7,7 @@ import { Divider } from "semantic-ui-react";
 import ProjectModal from "./ProjectModal";
 
 export default function ProjectsPage() {
-  const [selectedTab, setSelectedTab] = useState("Personal");
+  // const [selectedTab, setSelectedTab] = useState("Personal");
   const [open, setOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
@@ -21,18 +21,18 @@ export default function ProjectsPage() {
   }
 
   return (
-    <Layout className="projectsPage">
+    <>
       {open && (
         <ProjectModal
           project={selectedProject}
           clearProject={handleCloseModal}
         />
       )}
-
-      <div className="projectsPage-container">
-        <h2 className="projectsPage">My Projects</h2>
-        <div className="projectsPage-projects">
-          <div
+      <Layout className="projectsPage">
+        <div className="projectsPage-container">
+          <h2 className="projectsPage">My Projects</h2>
+          <div className="projectsPage-projects">
+            {/* <div
             className="projectsPage-projects-tab"
             style={{
               left: "45%",
@@ -53,16 +53,27 @@ export default function ProjectsPage() {
             onClick={() => setSelectedTab("Course")}
           >
             Course
-          </div>
-          <p>
-            {selectedTab === "Personal"
+          </div> */}
+            <p>
+              {/* {selectedTab === "Personal"
               ? `These are my personal projects, I enjoy creating functional web applications from start to finish.`
-              : "These are my guided course projects that I have built whilst learning to code."}
-          </p>
-          <Divider />
-          <div className="projectsPage-projects-cards">
-            {projects.map((project, i) => {
-              if (project.category === selectedTab) {
+              : "These are my guided course projects that I have built whilst learning to code."} */}
+              These are the projects I have worked on so far. I'm always
+              learning and creating more applications to show off my potential.
+            </p>
+            <Divider />
+            <div className="projectsPage-projects-cards">
+              {projects.map((project, i) => {
+                // if (project.category === selectedTab) {
+                //   return (
+                //     <ProjectCard
+                //       key={i}
+                //       project={project}
+                //       openModal={handleOpenModal}
+                //     />
+                //   );
+                // }
+                // return null;
                 return (
                   <ProjectCard
                     key={i}
@@ -70,12 +81,11 @@ export default function ProjectsPage() {
                     openModal={handleOpenModal}
                   />
                 );
-              }
-              return null;
-            })}
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 }

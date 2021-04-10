@@ -22,6 +22,8 @@ export default function SkillsCard() {
           <li>HTML5</li>
           <li>CSS / SCSS</li>
           <li>JavaScript ES6</li>
+          <li>TypeScript</li>
+          <li>JQuery</li>
           <li>React</li>
           <li>Angular</li>
         </ul>
