@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.7957e6c6.chunk.css",
+    "main.js": "/portfolio/static/js/main.0d397a82.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0d397a82.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.ad2df3f4.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.ad2df3f4.js.map",
+    "static/css/2.d121974b.chunk.css": "/portfolio/static/css/2.d121974b.chunk.css",
+    "static/js/2.8fc0cc31.chunk.js": "/portfolio/static/js/2.8fc0cc31.chunk.js",
+    "static/js/2.8fc0cc31.chunk.js.map": "/portfolio/static/js/2.8fc0cc31.chunk.js.map",
+    "static/js/3.91e5c47e.chunk.js": "/portfolio/static/js/3.91e5c47e.chunk.js",
+    "static/js/3.91e5c47e.chunk.js.map": "/portfolio/static/js/3.91e5c47e.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.d121974b.chunk.css.map": "/portfolio/static/css/2.d121974b.chunk.css.map",
+    "static/css/main.7957e6c6.chunk.css.map": "/portfolio/static/css/main.7957e6c6.chunk.css.map",
+    "static/js/2.8fc0cc31.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8fc0cc31.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/portfolio/static/media/outline-icons.ddae9b1b.woff",
+    "static/media/github-brands.8bce9409.svg": "/portfolio/static/media/github-brands.8bce9409.svg",
+    "static/media/infoPup.1a7b4dd6.png": "/portfolio/static/media/infoPup.1a7b4dd6.png",
+    "static/media/linkedin-brands.1a3b6e53.svg": "/portfolio/static/media/linkedin-brands.1a3b6e53.svg",
+    "static/media/natours.1e52b46d.png": "/portfolio/static/media/natours.1e52b46d.png",
+    "static/media/nexter.e8971a96.png": "/portfolio/static/media/nexter.e8971a96.png",
+    "static/media/omnifood.43f7bdb3.png": "/portfolio/static/media/omnifood.43f7bdb3.png",
+    "static/media/portfolio.8d989b1c.png": "/portfolio/static/media/portfolio.8d989b1c.png",
+    "static/media/reactivities.92f9449e.png": "/portfolio/static/media/reactivities.92f9449e.png",
+    "static/media/recipebook.c466d6e3.png": "/portfolio/static/media/recipebook.c466d6e3.png",
+    "static/media/trillo.de4b52b3.png": "/portfolio/static/media/trillo.de4b52b3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad2df3f4.js",
+    "static/css/2.d121974b.chunk.css",
+    "static/js/2.8fc0cc31.chunk.js",
+    "static/css/main.7957e6c6.chunk.css",
+    "static/js/main.0d397a82.chunk.js"
+  ]
+}
