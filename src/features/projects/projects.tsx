@@ -57,7 +57,6 @@ export const projects: Project[] = [
       "A friend came to me with a problem, most bots on twitch use Twitch API's live webhook. This means that notifications can be sent out to users sometimes up to 5 minutes later than the actual go live time on twitch.tv. He also wanted to give his viewers an incentive to show up early to his streams.",
       "To solve this problem, i developed Info Pup. A custom bot that you can set up a schedule with and have it post notifications in Discord and Twitter. As well as this, it logs into the users channel 5 minutes before the go live time and rewards anyone that chats with a custom role on Discord.",
       "Creating this application taught me a lot about Node.JS and working with API's. In order to access users connections on Discord, they had to go through the OAuthentication flow to allow my app to access their info.",
-      "The source code for this project is currently undergoing a refactor in order to make it safe to share publicly on GitHub.",
     ],
     category: "Personal",
     tools: [
@@ -86,6 +85,7 @@ export const projects: Project[] = [
       "The application is a social event planner. You can create an account, then join or host events and chat about them with other participants. You can also customise your profile with profile pictures and info, and follow other users.",
       "The application has many features, including a chat feature on each event page that uses SingalR to update in real time, no need to refresh the page when a user posts a comment!",
       "The Back-end uses JWT's for authentication, and is built using Uncle Bobs Clean Architecture design principles, CQRS and MediatR.",
+      'You can use the credentials "bob@test.com" and "Pa$$w0rd" to log in to this, and make changes however you like. The facebook login feature is currently in development mode so will not work with personal accounts.',
     ],
     category: "Course",
     tools: [
@@ -113,6 +113,7 @@ export const projects: Project[] = [
       'This web application was built using Angular for the Udemy Course "Angular - The Complete Guide (2020 Edition)"',
       "The application is a place to store recipes, and has a shopping list feature where you can select the recipe you want to make and it will add those ingredients to the list.",
       "I used Firebase as the back-end of this application, for hosting and database. This was my first exposure to linking a front end application to a back-end. It allowed me to begin to understand how larger applications would be structured and served as a great introduction to my first modern framework.",
+      'You can use the credentials "test@test.com" and "password" to log in to this, and make changes however you like. The firebase Database is currently closed to edits to prevent filling the database and incurring a charge so changes will not persist.',
     ],
     category: "Course",
     tools: [

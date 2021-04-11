@@ -3,14 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navbaritem.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Icon } from "semantic-ui-react";
+import { SemanticICONS } from "semantic-ui-react/dist/commonjs/generic";
 
 interface Props {
-  faIcon: IconDefinition;
+  icon: SemanticICONS;
   name: string;
   linkPath: string;
 }
 
-export default function NavbarItem({ faIcon, name, linkPath }: Props) {
+export default function NavbarItem({ icon, name, linkPath }: Props) {
   return (
     <NavLink
       to={linkPath}
@@ -32,14 +34,14 @@ export default function NavbarItem({ faIcon, name, linkPath }: Props) {
       }}
     >
       <div style={{ width: "6rem", display: "flex", justifyContent: "center" }}>
-        <FontAwesomeIcon icon={faIcon} size="3x" color="white" />
+        <Icon name={icon} color="grey" inverted size="big" />
       </div>
       <span
         style={{
           color: "white",
           fontSize: "2.5rem",
           marginLeft: "0.1rem",
-          cursor: "default",
+          cursor: "pointer",
         }}
       >
         {name}

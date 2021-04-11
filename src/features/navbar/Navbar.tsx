@@ -15,28 +15,28 @@ export default function Navbar() {
       <div className="navbar-container">
         <ul>
           <li>
-            <NavbarItem faIcon={faHome} name={"Summary"} linkPath={"/"} />
-          </li>
-          <li>
             <NavbarItem
-              faIcon={faMale}
-              name={"About Me"}
-              linkPath={"/aboutme"}
+              icon={"home"}
+              name={"Summary"}
+              linkPath={"/portfolio"}
             />
           </li>
           <li>
-            <NavbarItem faIcon={faCode} name={"Skills"} linkPath={"/skills"} />
+            <NavbarItem icon={"male"} name={"About Me"} linkPath={"/aboutme"} />
+          </li>
+          <li>
+            <NavbarItem icon={"code"} name={"Skills"} linkPath={"/skills"} />
           </li>
           <li>
             <NavbarItem
-              faIcon={faFileCode}
+              icon={"file code"}
               name={"Projects"}
               linkPath={"/projects"}
             />
           </li>
           <li>
             <NavbarItem
-              faIcon={faAddressCard}
+              icon={"address card"}
               name={"Contact"}
               linkPath={"/contact"}
             />
