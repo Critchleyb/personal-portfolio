@@ -21,7 +21,7 @@
 
 .skills-card {
   display: flex;
-  width: 65%;
+  max-width: 65%;
   min-height: 70%;
   border-radius: 15px;
   overflow: hidden;
@@ -102,4 +102,36 @@ p {
   text-align: center;
   margin-top: 0rem;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .skills-card {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills-card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .skills-card-section {
+    flex-direction: column;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(180, 180, 180);
+
+    &-middle {
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills-card {
+    width: 80%;
+  }
 }

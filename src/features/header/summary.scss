@@ -34,11 +34,16 @@
     animation-fill-mode: both;
   }
 
+  &-container {
+    display: flex;
+    width: 100%;
+  }
+
   &-aboutMe-container {
     display: block;
     font-size: 1.5rem;
     padding: 1rem;
-    width: 40rem;
+    max-width: 40rem;
     border-radius: 30px;
     margin-right: auto;
     margin-left: 2rem;
@@ -85,5 +90,23 @@
 
   h1 h2 {
     margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .summary-container {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .summary-container-title {
+    order: -1;
+    align-items: center;
+    margin: 0;
+  }
+
+  .summary-container-about {
+    margin-top: 10rem;
   }
 }

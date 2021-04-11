@@ -17,7 +17,7 @@
   }
 
   &-content {
-    flex: 1 0 40rem;
+    flex: 0 0 40rem;
     width: 70%;
     margin-bottom: 2rem;
     background-color: rgb(240, 240, 240);
@@ -46,5 +46,11 @@
     font-size: 1.3rem;
     letter-spacing: 0.8px;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutMe-content {
+    width: 90%;
   }
 }
