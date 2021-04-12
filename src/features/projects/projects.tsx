@@ -23,7 +23,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Personal Portfolio",
-    hostedLink: "http://bencritchley.com",
+    hostedLink: "https://critchleyb.github.io/portfolio/",
     githubLink: "https://github.com/Critchleyb/personal-portfolio",
     image: portfolioImage,
     shortBio:
