@@ -7,10 +7,12 @@ import nexterImage from "../../assets/images/nexter.png";
 import reactivitiesImage from "../../assets/images/reactivities.png";
 import recipebookImage from "../../assets/images/recipebook.png";
 import codeiconImage from "../../assets/images/web-code.png";
+import networkDashboardImage from "../../assets/images/networkDashboard.png";
 
 export interface Project {
   title: string;
   image?: string;
+  youtubeId?: string;
   shortBio?: string;
   longBio?: string[];
   hostedLink?: string;
@@ -44,6 +46,30 @@ export const projects: Project[] = [
       "Responsive Design",
       "Local State Management",
       "HTML",
+    ],
+  },
+  {
+    title: "Network Dashboard",
+    githubLink: "https://github.com/Critchleyb/Belong-NetworkDashboard",
+    image: networkDashboardImage,
+    youtubeId: "h7CeQ52fv-o",
+    shortBio:
+      "A Network dashboard built in React.JS & .NET Core pulling data from Merakis Dashboard API.",
+    longBio: [
+      "This project is a Network dashboard built in React.JS with a .NET Core Back End. It allows Staff in BELONG Gaming arenas to view network usage of devices in their store without having to have a login to the Meraki Dashboard management platform.",
+      "This web app is quite simple in nature, however one challenge was that the Dashboard API does not allow requests to be made from the front end due to CORS policies. Instead of using a Proxy, I instead created a Back End to go with this project that does some tidying up on the data recieved from Meraki before passing it back to the front-end.",
+      "The application uses local state as it was not big enough to justify the use of MobX / Redux. However implementing these in the future would give me the opportunity to add more features and improve performance by making fewer calls to the Dashboard API.",
+      "The application is to be hosted internally on the BELONG network, so unfortunately I can not provide a hosted link. However please watch the short video above to see a demonstration of the application.",
+    ],
+    category: "Professional",
+    tools: [
+      "React.JS",
+      "REST API Intergration",
+      ".NET Core",
+      "Semantic UI React",
+      "Responsive Design",
+      "React Hooks",
+      "JavaScript ES6",
     ],
   },
   {

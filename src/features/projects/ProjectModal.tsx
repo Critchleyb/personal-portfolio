@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Button, Header, Modal, Image, List, Divider } from "semantic-ui-react";
+import {
+  Button,
+  Header,
+  Modal,
+  Image,
+  List,
+  Divider,
+  Embed,
+} from "semantic-ui-react";
 import { Project } from "./projects";
 import "./projectModal.scss";
 import placeholderImage from "../../assets/images/placeholder.jpg";
@@ -38,20 +46,30 @@ export default function ProjectModal({ project, clearProject }: Props) {
         {project?.title}
       </Modal.Header>
       <Modal.Content scrolling>
-        <div
-          style={{
-            height: "20rem",
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <Image
-            src={project?.image || placeholderImage}
-            alt="project image"
-            centered
+        {project?.youtubeId !== undefined ? (
+          <Embed
+            id={project.youtubeId}
+            placeholder={project.image || placeholderImage}
+            source="youtube"
+            active
           />
-        </div>
+        ) : (
+          <div
+            style={{
+              height: "20rem",
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Image
+              src={project?.image || placeholderImage}
+              alt="project image"
+              centered
+              hidden={project?.youtubeId != undefined}
+            />
+          </div>
+        )}
 
         <Divider />
         <Modal.Description>

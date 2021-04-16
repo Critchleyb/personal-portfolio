@@ -3,10 +3,24 @@ import { Image, List, Button, Label } from "semantic-ui-react";
 import "./projectCard.scss";
 import { Project } from "./projects";
 import placeholderImage from "../../assets/images/placeholder.jpg";
+import { SemanticCOLORS } from "semantic-ui-react/dist/commonjs/generic";
 
 interface Props {
   project: Project;
   openModal: (project: Project) => void;
+}
+
+function getLabelColor(category: string): SemanticCOLORS {
+  switch (category) {
+    case "Personal":
+      return "green";
+    case "Course":
+      return "red";
+    case "Professional":
+      return "orange";
+    default:
+      return "grey";
+  }
 }
 
 export default function ProjectCard({ project, openModal }: Props) {
@@ -19,6 +33,7 @@ export default function ProjectCard({ project, openModal }: Props) {
       <h3>{project.title}</h3>
 
       <div className="project-card-image-container">
+        {}
         <Image
           className="project-card-image"
           src={project.image || placeholderImage}
@@ -26,7 +41,7 @@ export default function ProjectCard({ project, openModal }: Props) {
         />
       </div>
       <Label
-        color={project.category === "Personal" ? "green" : "red"}
+        color={getLabelColor(project.category)}
         style={{ marginTop: "0.5rem" }}
       >
         {project.category} Project
